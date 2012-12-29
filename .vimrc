@@ -32,7 +32,7 @@ set showmatch           "When a bracket is inserted,briefly jump to the matching
 "case configuration
 set ignorecase          "If this option is on, the case of normal letters is ignored."
 set smartcase           "Override the 'ignorecase' option if the search patterns contains upper case characters."
-set completeopt=longest,menu,preview  
+set completeopt=longest,menu
                         "A comma separated list options for insert completion."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
