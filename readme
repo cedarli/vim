@@ -1,3 +1,5 @@
 vim configuration 
 Copyright Cedar Li Open Source Project 
 Welcoome to download and using it except commercial
+
+1.completeopt preview is not used <Enter> key complete,so remove this option. 
