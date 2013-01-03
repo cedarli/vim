@@ -37,8 +37,12 @@ set completeopt=longest,menu
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
 set mouse=a             "Enable the use of the mouse."
+"syntax highlight configuration
+syntax on
 "tags configuration
 set tags=tags;          "search ctags plugin in vim"
     set autochdir
+"matching configuration
+set matchpairs=(:),[:],{:},<:>
 "shortcut map"
 map <silent> <F9> :TlistToggle<cr> 
