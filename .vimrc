@@ -43,6 +43,7 @@ syntax on
 set tags=tags;          "search ctags plugin in vim"
 if exists("+autochdir")    
     set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
+endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
 "shortcut map"
