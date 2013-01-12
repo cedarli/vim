@@ -2,4 +2,8 @@ vim configuration
 Copyright Cedar Li Open Source Project 
 Welcoome to download and using it except commercial
 
-1.completeopt preview is not used <Enter> key complete,so remove this option. 
+a>acp Automatically opens popup menu for completions.
+b>a open head file and source file.
+c>cscope_macros Cscope Set and shortcut map.
+d>taglist extension Ctags plugin.
+e>omnicppcomplete This script is for 7.0 or higher, it provides C/C++ completion thanks to a ctags database. 
