@@ -11,7 +11,7 @@ set gdefault            "When on,the ':substitude' flag 'g' is default on.This m
 "tab configuration
 set tabstop=4           "Number of spaces that a <tab> in the file counts for.Also see 'retab' command and 'softtabstop' option."
 set shiftwidth=4        "Number of spaces to use for each step of (auto)indent.Used for 'cindent' '>>' '<<' etc."
-set softtabstop=0       "Number of spaces that a <tab> counts for while performing editing operation,like insert a <tab> using <BS>."
+set softtabstop=4       "Number of spaces that a <tab> counts for while performing editing operation,like insert a <tab> using <BS>."
 set expandtab	        "In insert mode:Use the appropriate number of spaces to insert a <tab>"
 set smarttab            "When on,a <tab> in front of a line inserts according to 'shiftwidth'."
 "status configuration
@@ -41,8 +41,9 @@ set mouse=a             "Enable the use of the mouse."
 syntax on
 "tags configuration
 set tags=tags;          "search ctags plugin in vim"
-    set autochdir
+if exists("+autochdir")    
+    set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
 "shortcut map"
-map <silent> <F9> :TlistToggle<cr> 
+map <silent> <F9> :TlistToggle<cr>      "Taglist:: shortcut for open Taglist" 
