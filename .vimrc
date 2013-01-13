@@ -46,5 +46,10 @@ if exists("+autochdir")
 endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
-"shortcut map"
-map <silent> <F9> :TlistToggle<cr>      "Taglist:: shortcut for open Taglist" 
+let $VIMHOME=$HOME
+if exists('LOCALVIM')
+    "load shortcut map file"
+    source $VIMHOME/.vim/config/shortcut.vim 
+    "load cscope macros file"
+    source $VIMHOME/.vim/config/cscope_macros.vim
+endif
