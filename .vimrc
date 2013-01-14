@@ -9,7 +9,7 @@ set hlsearch            "When there is a previous search pattern,highlight all i
 set incsearch           "While typing search command,show where pattern,as it was typed so far,matches."
 set gdefault            "When on,the ':substitude' flag 'g' is default on.This means that all matches in a line are substituded."
 "tab configuration
-set tabstop=4           "Number of spaces that a <tab> in the file counts for.Also see 'retab' command and 'softtabstop' option."
+set tabstop=8           "Number of spaces that a <tab> in the file counts for.Also see 'retab' command and 'softtabstop' option."
 set shiftwidth=4        "Number of spaces to use for each step of (auto)indent.Used for 'cindent' '>>' '<<' etc."
 set softtabstop=4       "Number of spaces that a <tab> counts for while performing editing operation,like insert a <tab> using <BS>."
 set expandtab	        "In insert mode:Use the appropriate number of spaces to insert a <tab>"
