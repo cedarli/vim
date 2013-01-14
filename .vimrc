@@ -47,7 +47,7 @@ endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
 let $VIMHOME=$HOME
-if exists('LOCALVIM')
+if exists('$VIMHOME')
     "load shortcut map file"
     source $VIMHOME/.vim/config/shortcut.vim 
     "load cscope macros file"
