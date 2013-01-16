@@ -51,5 +51,24 @@ if exists('$VIMHOME')
     "load shortcut map file"
     source $VIMHOME/.vim/config/shortcut.vim 
     "load cscope macros file"
-    source $VIMHOME/.vim/config/cscope_macros.vim
+    source $VIMHOME/.vim/config/plugin.vim
 endif
+"auto complete matchpairs"
+:inoremap ( ()<ESC>i
+:inoremap ) <c-r>=ClosePair(')')<CR>
+:inoremap { {<CR>}<ESC>O
+:inoremap } <c-r>=ClosePair('}')<CR>
+:inoremap [ []<ESC>i
+:inoremap ] <c-r>=ClosePair(']')<CR>
+:inoremap < <><ESC>i 
+:inoremap > <c-r>=ClosePair('>')<CR> 
+:inoremap " ""<ESC>i
+:inoremap ' ''<ESC>i
+
+function! ClosePair(char)
+    if getline('.')[col('.') - 1] == a:char
+        return "\<Right>"
+    else
+        return a:char
+    endif
+endfunction
