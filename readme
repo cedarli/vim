@@ -7,3 +7,9 @@ b>a open head file and source file.
 c>cscope_macros Cscope Set and shortcut map.
 d>taglist extension Ctags plugin.
 e>omnicppcomplete This script is for 7.0 or higher, it provides C/C++ completion thanks to a ctags database. 
+    used omnicppcomplete ctags is --c++-kinds=+p -fields=+iaS --extra=+q options to autocomplete.
+    set tags=tags
+    filetype plugin on
+    set autochdir
+f>code_complete In insert mode,when you type<tab>(default value of g:completekey) after function name with a '(',function parameters will be append behind,use <tab> key again to switch between parameters.
+

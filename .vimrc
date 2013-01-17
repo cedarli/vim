@@ -32,13 +32,17 @@ set showmatch           "When a bracket is inserted,briefly jump to the matching
 "case configuration
 set ignorecase          "If this option is on, the case of normal letters is ignored."
 set smartcase           "Override the 'ignorecase' option if the search patterns contains upper case characters."
-set completeopt=longest,menu
+set completeopt=menu,menuone
                         "A comma separated list options for insert completion."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
 set mouse=a             "Enable the use of the mouse."
 "syntax highlight configuration
 syntax on
+"filetype detect"
+filetype on             "This will trigger the filetype event,which can be used to set the syntax highlight options,etc."
+filetype plugin on
+filetype indent on
 "tags configuration
 set tags=tags;          "search ctags plugin in vim"
 if exists("+autochdir")    
@@ -46,3 +50,5 @@ if exists("+autochdir")
 endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
+
+
