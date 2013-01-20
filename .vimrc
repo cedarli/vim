@@ -50,5 +50,3 @@ if exists("+autochdir")
 endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
-
-
