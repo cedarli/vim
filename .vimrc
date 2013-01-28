@@ -36,6 +36,13 @@ set completeopt=menu,menuone
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
 set mouse=a             "Enable the use of the mouse."
+"show <tab> character"
+set list 
+set listchars=tab:>-,trail:-
+"Confirm save file"
+set confirm             "Execute {command},and using a loading when an operation has to be confirmed."
+"Don't backup file before overwriting a file"
+set nobackup            "Leave it around after the file has been successfully written."
 "syntax highlight configuration
 syntax on
 "filetype detect"
