@@ -2,7 +2,7 @@
 "This is a spcial kind of option,because when is's set or reset,other options are also changed as a side effect."
 set nocompatible
 "line configuration
-set number	            "Same as: print ,but precede each line with its line number.See also 'highlight' 'nmberwidth' optiton."
+set number              "Same as: print ,but precede each line with its line number.See also 'highlight' 'nmberwidth' optiton."
 set wrap                "This option changs how text is displayed.Tt doesn't change width in the buffer,see 'textwidth' for that."
 "search configuration
 set hlsearch            "When there is a previous search pattern,highlight all its matches."
@@ -12,15 +12,15 @@ set gdefault            "When on,the ':substitude' flag 'g' is default on.This m
 set tabstop=8           "Number of spaces that a <tab> in the file counts for.Also see 'retab' command and 'softtabstop' option."
 set shiftwidth=4        "Number of spaces to use for each step of (auto)indent.Used for 'cindent' '>>' '<<' etc."
 set softtabstop=4       "Number of spaces that a <tab> counts for while performing editing operation,like insert a <tab> using <BS>."
-set expandtab	        "In insert mode:Use the appropriate number of spaces to insert a <tab>"
+set expandtab           "In insert mode:Use the appropriate number of spaces to insert a <tab>"
 set smarttab            "When on,a <tab> in front of a line inserts according to 'shiftwidth'."
 "status configuration
 set laststatus=2        "The value of this option influences when a last window will have a status line"
                         "0:never 1:only at least two windows 2:always"
 set cmdheight=2         "Number of screen lines to use for command-line."
-set showmode 	        "If Insert,Replace or visual mode put a message on the last line."
-set title	            "When on,the title of window will be set to the value of 'titlestring',or to filename [+=-](path)-Vim."
-set showcmd		        "Show (partial) command in the last line of the screen"
+set showmode            "If Insert,Replace or visual mode put a message on the last line."
+set title               "When on,the title of window will be set to the value of 'titlestring',or to filename [+=-](path)-Vim."
+set showcmd             "Show (partial) command in the last line of the screen"
 set ruler               "Show the line and column number of the cursor position,separated by a comma."
 "indent configuration
 set autoindent          "Copy indent from current line when starting a new line."
@@ -51,7 +51,7 @@ filetype plugin on
 filetype indent on
 "tags configuration
 set tags=tags;          "search ctags plugin in vim"
-if exists("+autochdir")    
+if exists("+autochdir")
     set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
 endif
 "matching configuration
