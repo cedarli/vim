@@ -1,0 +1,14 @@
+#! /bin/sh
+if [ -d "$HOME/.vim" ] ; then
+    mv -T $HOME/.vim $HOME/vim.backup
+    echo "backup $HOME/.vim to $HOME/vim.backup"
+fi
+if [ -f "$HOME/.vimrc" ] ; then
+    mv -T $HOME/.vimrc $HOME/vimrc.backup
+    echo "backup $HOME/.vimrc to $HOME/vimrc.backup"
+fi
+if [ -d "$HOME" ] ; then
+    ln -si -T $HOME/.$USER/local/vim/.vim $HOME/.vim
+    ln -si -T $HOME/.$USER/local/vim/.vimrc $HOME/.vimrc
+    echo "Install success"
+fi
