@@ -1,11 +1,11 @@
 #! /bin/sh
 if [ -d "$HOME/.vim" ] ; then
-    mv -T $HOME/.vim $HOME/vim.backup
-    echo "backup $HOME/.vim to $HOME/vim.backup"
+    mv -T $HOME/.vim $HOME/.vim.backup
+    echo "backup $HOME/.vim to $HOME/.vim.backup"
 fi
 if [ -f "$HOME/.vimrc" ] ; then
-    mv -T $HOME/.vimrc $HOME/vimrc.backup
-    echo "backup $HOME/.vimrc to $HOME/vimrc.backup"
+    mv -T $HOME/.vimrc $HOME/.vimrc.backup
+    echo "backup $HOME/.vimrc to $HOME/.vimrc.backup"
 fi
 if [ -d "$HOME" ] ; then
     path=${PWD}
