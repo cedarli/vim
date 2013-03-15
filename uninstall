@@ -1,0 +1,10 @@
+#! /bin/sh
+if [ -f "$HOME/.vim.backup" ] ; then
+    mv -T $HOME/.vim.backup $HOME/.vim
+    echo "restore $HOME/.vim.backup to $HOME/.vim"
+fi
+if [ -f "$HOME/.vimrc.backup" ] ; then
+    mv -T $HOME/.vimrc.backup $HOME/.vimrc
+    echo "restore $HOME/.vimrc.backup $HOME/.vimrc"
+    echo "Uninstall success"
+fi
