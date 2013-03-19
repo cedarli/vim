@@ -35,7 +35,7 @@ set completeopt=menu,menuone
                         "A comma separated list options for insert completion."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
-set mouse=a             "Enable the use of the mouse."
+set mouse=v             "Enable the use of the mouse."
 "show <tab> character"
 set list 
 set listchars=tab:>-,trail:-
