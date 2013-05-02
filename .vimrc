@@ -50,7 +50,7 @@ filetype on             "This will trigger the filetype event,which can be used 
 filetype plugin on
 filetype indent on
 "tags configuration
-set tags=tags;          "search ctags plugin in vim"
+set tags+=tags;          "search ctags plugin in vim"
 if exists("+autochdir")
     set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
 endif
