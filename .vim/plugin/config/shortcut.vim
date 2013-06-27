@@ -5,4 +5,4 @@ map <C-f> :execute "vimgrep /" . expand('<cword>') . '/gj ' .expand('%')<Bar>cop
 map <C-a> <Esc>ggVG<CR>
 map <C-w> :q<CR>
 map <C-d> <Esc>:cclose<CR>
-map <S-F8> :execute "/" expand("<cword>")<CR>
+map <buffer><S-F8> :execute "/" . expand("<cword>")<CR>
