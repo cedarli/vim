@@ -26,7 +26,8 @@
 "search shift+F8"
     map <buffer><S-F8> :execute "/" . expand("<cword>")<CR>
     nmap <F2> :nohlsearch<CR>
-"buffer shortcut"
 
-
-
+"--mark begin--"
+    map <S-m> \m<Plug>MarkToggle<CR>
+    map <S-n> \n<Plug>MarkAllClear.<CR>
+"--mark end--"
