@@ -8,7 +8,9 @@
 "--Edit begin--"
     map <C-a> <Esc>ggVG<CR>
     map <C-s> :w<CR>
-    map <C-c> yw<CR>
+    inoremap <C-v> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>
+    map <C-c> +y<CR>
+    map <C-x> +x<CR>
 "--Edit eng--"
 "
 "--taglist begin--"

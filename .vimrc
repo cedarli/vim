@@ -1,5 +1,6 @@
 "This option has the effect of marking Vim either more Vi-compatible ,or make Vim behave in a more userful way,"
 "This is a spcial kind of option,because when is's set or reset,other options are also changed as a side effect."
+
 set nocompatible
 "line configuration
 set number              "Same as: print ,but precede each line with its line number.See also 'highlight' 'nmberwidth' optiton."
@@ -16,7 +17,6 @@ set expandtab           "In insert mode:Use the appropriate number of spaces to 
 set smarttab            "When on,a <tab> in front of a line inserts according to 'shiftwidth'."
 "status configuration
 set modeline
-set visualbell
 set noerrorbells
 set laststatus=2        "The value of this option influences when a last window will have a status line"
                         "0:never 1:only at least two windows 2:always"
@@ -41,8 +41,6 @@ set wildmode=list:full  "List all matches and complete each full match."
 set wildignore=*.swp,*.bak,*.pyc,*.class
                         "wild ignore extends files."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
-"mouse configuration
-set mouse=v             "Enable the use of the mouse."
 "show <tab> character"
 set list
 set listchars=tab:>-,trail:-,extends:#,nbsp:-
@@ -63,3 +61,21 @@ if exists("+autochdir")
 endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
+
+"mouse configuration
+if has('mouse')
+    set mouse=v             "Enable the use of the mouse."
+endif
+
+if has('gui_running')
+   let do_syntax_sel_menu=1
+   if $LANG !~ '\.'
+       set encoding=utf-8
+   endif
+endif
+
+if has('multi_byte') && v:version > 601
+    if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
+        set ambiwidth=double
+    endif
+endif
