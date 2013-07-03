@@ -15,6 +15,9 @@ set softtabstop=4       "Number of spaces that a <tab> counts for while performi
 set expandtab           "In insert mode:Use the appropriate number of spaces to insert a <tab>"
 set smarttab            "When on,a <tab> in front of a line inserts according to 'shiftwidth'."
 "status configuration
+set modeline
+set visualbell
+set noerrorbells
 set laststatus=2        "The value of this option influences when a last window will have a status line"
                         "0:never 1:only at least two windows 2:always"
 set cmdheight=2         "Number of screen lines to use for command-line."
@@ -31,14 +34,18 @@ set shiftround          "Round indent to multiple of 'shiftwidth'."
 set showmatch           "When a bracket is inserted,briefly jump to the matching one."
 "case configuration
 set ignorecase          "If this option is on, the case of normal letters is ignored."
-set completeopt=menu,menuone
+"command-line complete configuration"
                         "A comma separated list options for insert completion."
+set wildmenu            "When wildmode is on,command-line completion operators int an enhanced mode."
+set wildmode=list:full  "List all matches and complete each full match."
+set wildignore=*.swp,*.bak,*.pyc,*.class
+                        "wild ignore extends files."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "mouse configuration
 set mouse=v             "Enable the use of the mouse."
 "show <tab> character"
-set list 
-set listchars=tab:>-,trail:-
+set list
+set listchars=tab:>-,trail:-,extends:#,nbsp:-
 "Confirm save file"
 set confirm             "Execute {command},and using a loading when an operation has to be confirmed."
 "Don't backup file before overwriting a file"
