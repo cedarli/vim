@@ -7,7 +7,7 @@
 
 "--Edit begin--"
     map <C-a> <Esc>ggVG<CR>
-    map <C-s> :w<CR>
+    map  <F4> :w<CR>
     inoremap <C-v> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>
     map <C-c> +y<CR>
     map <C-x> +x<CR>
@@ -33,3 +33,11 @@
     map <S-m> \m<Plug>MarkToggle<CR>
     map <S-n> \n<Plug>MarkAllClear.<CR>
 "--mark end--"
+
+"compile make shortcut"
+    map <F5> :make<CR>
+"make shortcut end"
+
+"make clean shortcut"
+    map <F6> :make clean<CR>
+"make clean end"
