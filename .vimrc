@@ -52,8 +52,7 @@ set nobackup            "Leave it around after the file has been successfully wr
 syntax on
 "filetype detect"
 filetype on             "This will trigger the filetype event,which can be used to set the syntax highlight options,etc."
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 "tags configuration
 set tags+=tags;          "search ctags plugin in vim"
 if exists("+autochdir")
