@@ -42,6 +42,10 @@
     map <F6> :make clean<CR>
 "make clean end"
 
+"project"
+    map<C-p> :Project<CR>
+"project shortcut end"
+
 let mapleader="f"
 
 nmap <leader>s : cs find s <C-R>=expand("<cword>")<CR><CR>
