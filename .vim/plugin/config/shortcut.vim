@@ -8,7 +8,7 @@
 "--Edit begin--"
     map <C-a> <Esc>ggVG<CR>
     map <C-S-s> :w<CR>
-    map <C-S-v> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>
+"    map <C-S-v> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>"
     map <C-S-c> +y<CR>
     map <C-S-x> +x<CR>
 "--Edit eng--"
