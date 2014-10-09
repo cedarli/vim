@@ -48,6 +48,8 @@ set listchars=tab:>-,trail:-,extends:#,nbsp:-
 set confirm             "Execute {command},and using a loading when an operation has to be confirmed."
 "Don't backup file before overwriting a file"
 set nobackup            "Leave it around after the file has been successfully written."
+"good performance config"
+set lazyredraw
 "syntax highlight configuration
 syntax on
 "filetype detect"
