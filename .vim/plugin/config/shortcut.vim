@@ -35,11 +35,11 @@
 "--mark end--"
 
 "compile make shortcut"
-    map <F5> :make<CR>
+"    map <F5> :make<CR>
 "make shortcut end"
 
 "make clean shortcut"
-    map <F6> :make clean<CR>
+"    map <F6> :make clean<CR>
 "make clean end"
 
 "project"
