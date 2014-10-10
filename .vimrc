@@ -18,6 +18,7 @@ set smarttab            "When on,a <tab> in front of a line inserts according to
 "status configuration
 set modeline
 set noerrorbells
+"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set laststatus=2        "The value of this option influences when a last window will have a status line"
                         "0:never 1:only at least two windows 2:always"
 set cmdheight=2         "Number of screen lines to use for command-line."
