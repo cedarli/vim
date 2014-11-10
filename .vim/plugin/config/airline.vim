@@ -6,6 +6,8 @@ function! AirlineThemePatch(palette)
         endfor
     endif
 endfunction
+"status bar
+let g:airline_section_b = '%{getcwd()}'
 "enable/disable tabline integration
 let g:airline#extensions#tabline#enabled = 1
 "configure separators for the tabline only.
