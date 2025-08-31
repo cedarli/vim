@@ -21,17 +21,20 @@
     
 "--taglist end--"
 
-"--FZF begin--"
-   let mapleader="f"
-   map <leader>z :FZF<CR>
-"--FZF end --"
+"--LookupFile begin--"
+    let mapleader="["
+    nnoremap <leader>k :LookupFile<cr>
+    nnoremap <leader>t :LUTags<cr>
+    nnoremap <leader>b :LUBufs<cr>
+    nnoremap <leader>w :LUWalk<cr>
+"--LookupFile end --"
 
 "--quickfix window begin--"
-    map <C-up> :cp<CR>
-    map <C-down> :cn<CR>
+    map <C-up> :cn<CR>
+    map <C-down> :cp<CR>
     map <C-r> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar>cw 20<CR>
     map <C-f> :execute "vimgrep /" . expand('<cword>') . '/gj ' .expand('%')<Bar>copen 20<CR>
-    map <return> :cclose<CR>
+"    map <return> :cclose<CR>
 "--quickfix window end"
 
 "search shift+F8"

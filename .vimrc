@@ -43,8 +43,8 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
                         "wild ignore extends files."
 set cursorline          "Highlight the screen line of the cursor with Cursorline."
 "show <tab> character"
-set list
-set listchars=tab:>-,trail:-,extends:#,nbsp:-
+"set list
+"set listchars=tab:>-,trail:-,extends:#,nbsp:-
 "Confirm save file"
 set confirm             "Execute {command},and using a loading when an operation has to be confirmed."
 "Don't backup file before overwriting a file"
@@ -58,9 +58,9 @@ filetype on             "This will trigger the filetype event,which can be used 
 filetype plugin indent on
 "tags configuration
 set tags+=tags;          "search ctags plugin in vim"
-if exists("+autochdir")
-    set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
-endif
+"if exists("+autochdir")
+"    set autochdir       "only avaliable when complided with it,use exists("+autochdir") to check"
+"endif
 "matching configuration
 set matchpairs=(:),[:],{:},<:>
 
